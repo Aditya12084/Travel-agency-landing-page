@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    background-image: linear-gradient(rgba(33, 17, 7, 0.7),rgba(51, 63, 94, 0.7)),url('assets/pexels-pixabay-247447.jpg');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+    color: white;
+}
+#logo{
+    font-size: 35px;
+    color: yellow;
+}
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
+}
+nav h1,.nav-links{
+    padding: 27px 70px;
+}
+nav .nav-links{
+  
+   flex: 1;   
+   display: flex;
+   text-align: right;
+   justify-content: right;
+}
+nav .nav-links ul{
+    flex: 1;
+}
+nav .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 0px 0px 60px;
+    
+}
+nav .nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    /* border-bottom: 2px solid rgb(190, 34, 102);
+    width: 0; */
+}
+nav .nav-links ul li a:hover{
+    color: rgb(190, 34, 102);
+}
+.spc-li button{
+   padding: 10px 20px 10px 20px;
+   background-color: rgb(190, 34, 102);
+   border: 2px solid rgb(190, 34, 102);
+   color: white;
+   border-radius: 20px;
+   /* border:  none; */
+   cursor: pointer;
+}
+.spc-li button:hover{
+    background-color: transparent;
+}
+.heading-cont{
+    width: 80%;
+    margin: 25px auto;
+    /* border: 2px solid red; */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.heading-cont .headOne{
+    font-size: xx-large;
+}
+.heading-cont .headTwo{
+    font-family: 'Playfair Display', serif;
+    font-size: 65px;
+    color: pink;
+}
+.heading-cont  .headOne,.headTwo{
+    margin-top: 40px;
+    padding: 0;
+}
+.heading-cont div{
+    position: relative;
+} 
+.heading-cont hr{
+    width: 10%;
+    margin:20px auto;
+    border:2px solid  rgb(190, 34, 102);
+    border-radius: 2px;
+    height: 2px;
+    background-color: rgb(190, 34, 102);
+}
+.heading-cont a{
+    text-decoration: none;
+    color: white;
+    border: none;
+    background-color: rgb(190, 34, 102);
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+}
+.nav-bars{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.nav-bars .bar{
+
+    height: 2px;
+    width: 30px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    border-radius: 3px;
+    
+}
+.nav-bars *{
+    margin-bottom: 4px;
+}
+
+@media (max-width:1136px) {
+    nav .nav-links ul{
+        position: fixed;
+        background-color: rgb(14, 22, 60);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        padding-top: 70px;
+        transition: 0.1s;
+        z-index: 1;
+    }
+    nav .nav-links ul li{
+        text-align: center;
+         display: block;
+         padding: 0;
+         margin-top: 20px;
+    }
+    .nav-bars{
+        display: flex;
+        justify-content: left;
+        /* z-index: 1; */
+    }
+    nav h1,.nav-links{
+        padding: 18px 25px;
+    }
+    #bar2{
+     display: none;
+    }
+    #bar1{
+       
+        transform:rotate(-45deg) translateY(7px);
+        
+    }
+    #bar3{
+        transform: rotate(45deg) translateY(-6px) ;
+    
+    }
+    
+}
+.hambMenuAct{
+    right: 0px;
+}
+
+
+@media (max-width:986px){
+    .heading-cont .headOne{
+        font-size: x-large;
+    }
+    .heading-cont .headTwo{
+        font-size: 50px;
+    }
+}
+.lrn-more{
+    margin-top: 30px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:758px){
+    .heading-cont .headOne{
+        font-size: large;
+    }
+    .heading-cont .headTwo{
+        font-size: 30px;
+    }
+    #logo{
+        font-size: 28px;
+    }
+}
+
+
+/* Destination */
+.destinations{
+    width: 80%;
+    text-align: center;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.destinations h1{
+    font-size: 35px;
+} 
+.destinations .dest-places{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.dest-places > * {
+    flex-basis: 35%;
+    margin: 30px;
+}
+.destinations .dest-places img{
+        width: 100%;
+        border-radius: 5px;
+        object-fit: cover;
+      
+}
+.destinations hr{
+    width: 20%;
+    text-align: center;
+    width: 10%;
+    margin:15px auto;
+    border:2px solid  rgb(190, 34, 102);
+    border-radius: 2px;
+    height: 2px;
+    background-color: rgb(190, 34, 102);
+}
+@media (max-width:977px){
+    .destinations .dest-places{
+       flex-direction: column;
+    }
+}
+
+.destinations .dest-places p{
+    margin-bottom: 25px;
+}
+.destinations .dest-places a{
+    background-color:  rgb(190, 34, 102);
+    padding: 10px 40px;
+    text-decoration: none;
+    color: white;
+}
+.destinations .dest-places a:hover{
+    background-color: #fff;
+    border: 2px solid  rgb(190, 34, 102);
+    color:  rgb(190, 34, 102);
+}
+.dest-card *{
+    margin: 10px;
+}
+
+.slog{
+    padding: 30px 0px;
+    background-color: rgb(206, 191, 191);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slog h2{
+    font-size: 1.9vw;
+    margin-bottom: 10px;
+}
+.slog p{
+    font-size: 1.5vw;
+}
+
+
+
+footer{
+    padding: 15px 0px;
+    background-color: rgb(23, 5, 40);
+    color: white;
+}
+
+footer li{
+    list-style: none;
+    margin-top: 10px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    color: blue;
+}
+footer img{
+    color: blue;
+    width: 30px;
+}
+
+.footer-content{
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    margin: 30px auto 0px auto;
+    justify-content: center;
+    /* align-items: center; */
+    width: 90%;
+    margin-bottom: 60px;
+}
+
+.footer-content > *{
+    margin: 0px 20px;
+   flex-basis: 20%;
+   flex: 1;
+}
+
+.contact-col div{
+    margin-top: 10px;
+}
+.followus-link-col div{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.followus-link-col div img{
+   margin: 10px 10px 0px 0px;
+}
+
+
+@media (max-width:861px) {
+    .footer-content{
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .footer-content h3{
+        font-size: medium;
+    }
+    .footer-content > * {
+       margin-top: 30px;
+    }
+}

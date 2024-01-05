@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eczar&family=Montserrat:wght@500&family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  </head>
+  <body>
+    <section id="home" class="header">
+      <nav>
+        <h1 id="logo">ADVENTURE</h1>
+        <div class="nav-links">
+          <ul id="menu" style="right: -200px;">
+            <div
+              style="position: absolute; left: 20px; top: 30px;"
+              onclick="openCloseMenu()"
+              class="nav-bars"
+              id="hambMenu"
+            >
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+            </div>
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#services">Services</a></li>
+            <li class="spc-li"><button>Contact</button></li>
+          </ul>
+          <div onclick="openCloseMenu()" class="nav-bars" id="hambMenu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="heading-cont">
+        <h1 class="headOne">Explore The Colorful World</h1>
+        <hr />
+        <h1 class="headTwo">Journey Beyond Boundaries</h1>
+        <div class="lrn-more">
+          <a href="">Explore more</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="destinations">
+      <h1>DESTINATIONS</h1>
+      <hr />
+
+      <div class="dest-places" data-aos="fade-up">
+        <div class="dest-card">
+          <img src="./assets/Taj-Mahal.jpg" alt="" />
+          <h3>Taj Mahal</h3>
+          <p>
+            The Taj Mahal is an ivory-white marble mausoleum on the right bank
+            of the river Yamuna in Agra, Uttar Pradesh, India.
+          </p>
+          <a href="">Learn More</a>
+        </div>
+        <div class="dest-card">
+          <img src="./assets/spain-taledo.jpg" alt="" />
+          <h3>Spain</h3>
+          <p>
+            Spain or the Kingdom of Spain is a country located in Southwestern
+            Europe
+          </p>
+          <a href="">Learn More</a>
+        </div>
+        <div class="dest-card">
+          <img src="./assets/srinagar.jpg" alt="" />
+          <h3>Srinagar</h3>
+          <p>
+            Srinagar is a city in Indian-administered Jammu and Kashmir and It
+            is the largest city and summer capital of Jammu and Kashmir.
+          </p>
+          <a href="">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="slog">
+      <h2>
+        "Explore the world with us, where every journey is an unforgettable
+        story."
+      </h2>
+      <p>-CEO & Founder Adventure Travel Agency</p>
+    </section>
+
+    <section id="tours" class="destinations">
+      <h1>Tours</h1>
+      <hr />
+
+      <div class="dest-places" data-aos="fade-slide">
+        <div class="dest-card">
+          <img src="./assets/petra.jpg" alt="" />
+          <h3>Historic</h3>
+          <p>
+            Discover the echoes of the past. Uncover ancient wonders and iconic
+            landmarks with our historic tours.
+          </p>
+          <a href="">Learn More</a>
+        </div>
+        <div class="dest-card">
+          <img src="./assets/luxury.jpg" alt="" />
+          <h3>Luxury</h3>
+          <p>
+            Indulge in extravagance. Tailored elegance, exclusive stays, and
+            unforgettable moments await
+          </p>
+          <a href="">Learn More</a>
+        </div>
+        <div class="dest-card">
+          <img src="./assets/temple2.jpg" alt="" />
+          <h3>Cultural</h3>
+          <p>
+            Immerse in diversity. Experience traditions, taste local flavors,
+            and embrace vibrant cultures.
+          </p>
+          <a href="">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <footer id="about">
+      <div class="footer-content">
+        <div class="contact-col">
+          <h2>Contact</h2>
+          <div>
+            <p>adventureadceo@gmail.com</p>
+            <p>+91 93-XX-XXXXXX</p>
+            <p>123 Adventure Avenue, Citytown, Statezip, Country.</p>
+          </div>
+        </div>
+        <div class="quick-link-col">
+          <h2>Quick Links</h2>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Tours</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+        </div>
+        <div class="followus-link-col">
+          <h2>Follow us</h2>
+          <div>
+            <a href="#"><img src="./assets/facebook.png" alt="" /></a>
+            <a href="#"><img src="./assets/twitter.png" alt="" /></a>
+            <a href="#"><img src="./assets/instagram.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="cta-col">
+          <h2>Explore</h2>
+          <li><a href="#">Start Your Adventure</a></li>
+          <li><a href="#">Explore Our Tours</a></li>
+        </div>
+      </div>
+      <p style="text-align: center;">
+        ©2024 AdventureTravelAgency. All rights reserved.
+      </p>
+    </footer>
+
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(
+        {
+          offset: 300,
+          duration:800
+        }
+        
+      );
+    </script>
+
+    <script>
+      let hambMenu = document.getElementById("hambMenu");
+
+      let menu = document.getElementById("menu");
+
+      function openCloseMenu() {
+        if (menu.style.right === "-200px") {
+          menu.style.right = "0px";
+        } else {
+          menu.style.right = "-200px";
+        }
+      }
+    </script>
+  </body>
+</html>
